@@ -68,7 +68,7 @@ Base
     font-family: 'Helvetica';
     src: url('../fonts/Helvetica/Helvetica-Light.woff2') format('woff2'),
         url('../fonts/Helvetica/Helvetica-Light.woff') format('woff');
-    font-weight: 300;
+    font-weight: 350;
     font-style: normal;
     font-display: swap;
 }

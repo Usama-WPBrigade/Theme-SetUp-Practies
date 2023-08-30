@@ -1,15 +1,16 @@
-.main-menu nav > ul > li:last-child a{
+header .main-menu nav > ul > li:last-child a{
     padding-right: 8px !important
 } 
 
-@media screen and (max-width: 1100px ) {
-    .topbar-card-wraper .elementor-widget-wrap .topbar-card:not(:first-child) .elementor-widget-container{
-        margin-left: 50px !important
-    }
+@media screen and (max-width: 1200px ) {
+    header .main-menu nav > ul > li a{
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    } 
 }
 @media screen and (max-width: 767px ) {
-    .topbar-card-wraper .elementor-widget-wrap .topbar-card:not(:first-child) .elementor-widget-container{
-        margin-left: 0px !important
+    header .topbar-card-wraper .elementor-widget-wrap .topbar-card:not(:first-child) .elementor-widget-container{
+        margin-left: 0px
     }
     .topbar-card-wraper .elementor-widget-wrap{
         width: calc(100% + 20px);
@@ -19,8 +20,8 @@
         align-items: center;
     }
     .topbar-card-wraper .elementor-widget-wrap .topbar-card{
-        width: calc(33.33% - 20px) !important;
-        margin: 0 10px 0 !important;
+        width: calc(33.33% - 20px)!important;
+        margin: 0 10px 0;
     }
     .topbar-card-wraper .elementor-widget-wrap .topbar-card .elementor-image-box-wrapper{
         display: flex;
@@ -28,7 +29,7 @@
         column-gap: 15px;
     }
 }
-@media screen and (max-width: 600px ) {
+@media screen and (max-width: 610px ) {
     .topbar-card-wraper .elementor-widget-wrap .topbar-card{
         width: calc(50% - 20px) !important;
     }
@@ -36,16 +37,13 @@
         padding: 20px 15px !important;
     }
     .topbar-card-wraper .elementor-widget-wrap .topbar-card:last-child{
-        display: none !important; 
+        display: none; 
     }
 }
 @media screen and (max-width: 425px ) {
     .topbar-card-wraper .elementor-widget-wrap{
         width: 100%;
         margin: 0 0 -10px !important;
-        flex-wrap: wrap;
-        justify-content: space-between !important;
-        align-items: center;
     }
     .topbar-card-wraper .elementor-widget-wrap .topbar-card{
         width: 100% !important;
