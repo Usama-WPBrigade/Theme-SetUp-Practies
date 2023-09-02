@@ -41,8 +41,8 @@ body .elementor-widget-container .elementor-nav-menu>li>.sub-menu a{
         height: 100vh;
         overflow-y: auto;
     }
-    body.Over-flow-hidden{
-        overflow-y: hidden;
+    body.active-header .header-section{
+        box-shadow: 5px 10px 26px rgb(0 0 0 / 18%);
     }
     body .elementor-widget-container .elementor-nav-menu >li>.sub-menu{
         background: #efefef !important

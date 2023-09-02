@@ -85,9 +85,10 @@ html body footer .gform_wrapper li.gfield.gfield_error.gfield_contains_required 
     html body .footer-form .gform_wrapper form .gform_footer input[type="submit"]{
         font-size: 0 !important;
         max-width: 70px;
-        height: 46px;
+        height: 41px;
         position: absolute;
         right: -1px;
+        top: 9px;
     }
     html body .footer-form .gform_wrapper form .gform_footer input[type="submit"]{
         background-image: url('../img/white-arrow.svg');
