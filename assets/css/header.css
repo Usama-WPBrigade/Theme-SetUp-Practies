@@ -1,13 +1,57 @@
 header .main-menu nav > ul > li:last-child a{
     padding-right: 8px !important
 } 
+.elementor-nav-menu .sub-arrow{
+    margin-left: auto;
+}
+body .elementor-widget-container .elementor-nav-menu>li>.sub-menu a{
+    font-size: 15px
+}
 
-@media screen and (max-width: 1200px ) {
+@media screen and (min-width: 1025px ) {
+    body.Over-flow-hidden{
+        overflow-y: scroll !important;
+    }
+    body .elementor-widget-container .elementor-nav-menu>li>.sub-menu{
+        filter: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.2));
+    }
+    header{
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+    body.logged-in header{
+        top: 32px;
+    }
+    header{
+        transition: 0.3s all;
+    }
+    body.active-header header{
+        box-shadow: 5px 10px 26px rgb(0 0 0 / 18%);
+    }
+}
+@media screen and (max-width: 1240px ) {
     header .main-menu nav > ul > li a{
         padding-left: 20px !important;
         padding-right: 20px !important;
     } 
 }
+@media screen and (max-width: 1024px ) {
+    header .main-menu nav.elementor-nav-menu--dropdown{
+        height: 100vh;
+        overflow-y: auto;
+    }
+    body.Over-flow-hidden{
+        overflow-y: hidden;
+    }
+    body .elementor-widget-container .elementor-nav-menu >li>.sub-menu{
+        background: #efefef !important
+    } 
+    body .elementor-widget-container .elementor-nav-menu >li>.sub-menu > li >.sub-menu  {
+        background: #c7c7c7 !important
+    }
+}
+
 @media screen and (max-width: 767px ) {
     header .topbar-card-wraper .elementor-widget-wrap .topbar-card:not(:first-child) .elementor-widget-container{
         margin-left: 0px

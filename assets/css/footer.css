@@ -1,132 +1,124 @@
-.footer-section{
-    position: relative;
-}
-.footer-section:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 306px;
-    height: 373px;
-    background: url(../img/footer-icon-bg.svg) center right no-repeat;
-    background-size: cover;
-}
-.footer-top{
-    z-index: 11;
-    position: relative;
-}
 
-.footer-bottom .elementor-row{
-        z-index: 11;
-    position: relative;
+html body .footer-form .gform_wrapper form ul.gform_fields li.gfield input,
+html body .footer-form .gform_wrapper form ul.gform_fields li.gfield{
+    margin-bottom: 0px !important
 }
-
-.footer-section:before{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, rgb(140, 29, 64)0%, rgb(140, 29, 64)25%,
-     rgb(0, 163, 224)25%, rgb(0, 163, 224)50%, rgb(255, 127, 50)50%, rgb(255, 127, 50)75%, rgb(255, 198, 39) 75%, rgb(255, 198, 39) 100%);
+html body .footer-form .gform_wrapper form ul.gform_fields li.gfield input{
+    background-image: url('../img/email-icon.png');
+    background-repeat: no-repeat;
+    background-position: 20px;
 }
-
-.partner-contact .elementor-image-box-wrapper a{
-    color: #ffffff;
+html body .footer-form .gform_wrapper form ul.gform_fields li.gfield input.hasValue,
+html body .footer-form .gform_wrapper form ul.gform_fields li.gfield input:focus{
+    background-image: none;
 }
-
-.partner-contact .elementor-image-box-wrapper a:hover{
-    color: #78BE20;
-    text-decoration: none;
-}
-
-.footer-nav-content .elementor-widget-container{
+html body .footer-form .gform_wrapper form{
     display: flex;
-    justify-content: flex-end;
+}
+html body .footer-form .gform_wrapper form .gform_body{
+    max-width: calc(100% - 170px);
+    width: 100%;
+}
+html body .footer-form  .gform_wrapper form .gform_footer{
+    padding: 0 0 0 20px;
+    max-width: 170px
 }
 
-
-.footer-nav{
-    list-style: none;
-    font-size: 0;
-    padding: 0;
-    margin: 0;
+html body .footer-form  .gform_wrapper form .gform_footer input[type="submit"]{
+    max-width: 170px
 }
-
-.footer-nav li{
-    display: inline-block;
-    position: relative;
-    line-height: 0;
-    padding: 0 8px 0 7px;
+.footer-icon-box-wrapper .elementor-widget-wrap{
+    width: calc(100% + 20px);
+    margin: 0 -10px -20px !important;
 }
-
-.footer-nav li:after{
-    content: "|";
-    position: absolute;
-    line-height: 0;
-    margin: 0 15px;
-    top: 50%;
-    right: 0;
-    font-size: 8px;
-    transform: translateY(-50%);
-    color: #ffffff;
-    margin: 0;
+.footer-icon-box-wrapper .elementor-widget-wrap .footer-icon-box{
+    width: calc(33.33% - 20px);
+    margin: 0 10px 20px !important;
 }
-
-.footer-nav li a{
-    display: block;
-    line-height: 1;
-    font-size: 8px;
-    color: #ffffff;
-    font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif !important;
-    text-transform: uppercase;
-}
-
-.footer-nav li a:hover{
-    color: #78BE20;
-    text-decoration: none;
-}
-
-.copyright-txt{
-    display: block;
-    line-height: 1;
-    font-size: 8px;
-    color: #ffffff;
-    margin-left: 7px;
-    font-family: 'Montserrat', Helvetica, Roboto, Arial, sans-serif !important;
-    text-transform: uppercase;
-}
-
-.partner-contact{
+.footer-copyright{
+    background-color: #15152C;
     position: relative;
 }
-
-.partner-contact:after{
-    content: "";
+.footer-copyright .elementor-container{
+    z-index: 2
+}
+.footer-social-icons .elementor-widget-container .elementor-social-icons-wrapper .elementor-grid-item a .fab{
+    transition: 0.3s all !important
+}
+.footer-copyright::after{
+    content: '';
+    width: 1000%;
+    background-color: inherit;
+    top: 0;
+    left: 50%;
     position: absolute;
-    line-height: 0;
-    margin: 0 15px;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    margin: 0;
     height: 100%;
-    width: 1px;
-    background-color: #fff;
-    opacity: 0.15;
+    z-index: 1;
+    transform: translatex(-50%)
+}
+footer .footer-main-wrapper{
+    overflow-x: clip;
+}
+html body footer .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.gfield_description{
+    position: absolute;
+}
+@media screen and (min-width: 768px ) {
+    .footer-contact .elementor-widget-container .elementor-icon-box-content{
+        display: flex;
+        align-content: center;
+    }
+    .footer-contact .elementor-widget-container .elementor-icon-box-content .elementor-icon-box-title{
+        margin-top: 0;
+        max-width: 125px;
+    } 
 }
 
-.partner-contact:nth-child(2):after{
-    display: none
+@media screen and (max-width: 1024px ) {
+    .footer-contact .elementor-widget-container .elementor-icon-box-content .elementor-icon-box-title{
+        max-width: 100px;
+    } 
+    html body .footer-form .gform_wrapper form .gform_body{
+        max-width:100%;
+        position: relative;
+    } 
+    html body .footer-form .gform_wrapper form .gform_footer,
+    html body .footer-form .gform_wrapper form .gform_footer input[type="submit"]{
+        font-size: 0 !important;
+        max-width: 70px;
+        height: 46px;
+        position: absolute;
+        right: -1px;
+    }
+    html body .footer-form .gform_wrapper form .gform_footer input[type="submit"]{
+        background-image: url('../img/white-arrow.svg');
+        background-repeat: no-repeat;
+        background-position: 52% center;
+    }
+    html body .footer-form .gform_wrapper form .gform_footer input[type="submit"]:hover{
+        background-image: url('../img/black-arrow.svg');
+        background-position: center;
+    }
 }
-
-.footer-social-section .elementor-social-icons-wrapper .fa-facebook:before {
-    content: "\f39e";
-    font-family: "Font Awesome 5 brands";
+@media screen and (max-width: 767px ) {
+    .footer-contact .elementor-widget-container .elementor-icon-box-icon{
+        margin-top: 7px; 
+    }
+    .footer-contact .elementor-widget-container .elementor-icon-box-content .elementor-icon-box-title{
+        max-width: 100%;
+    }  
 }
+@media screen and (max-width: 580px ) {
 
-.footer-social-section .elementor-social-icons-wrapper .fa-twitter:before {
-    content: "\f099";
-    font-family: "Font Awesome 5 brands";;
+    html body .footer-form .gform_wrapper form{
+        flex-direction: column;
+    }
+    .footer-icon-box-wrapper .elementor-widget-wrap{
+        width: 100%;
+        margin: 0 0 -20px !important;
+    }
+    .footer-icon-box-wrapper .elementor-widget-wrap .footer-icon-box{
+        width: 100%;
+        margin: 0 0 20px !important;
+    }
+
 }

@@ -38,21 +38,21 @@
 	});
 
 	$(document).ready(function() {
-	$(".elementor-accordion-item").on("click", function (x) {
-		if (window.matchMedia("(max-width: 900px)").matches) {
-			const item = $(this);
-			setTimeout(function () {
-				const position = item.offset().top;
-				$("body, html").animate({ scrollTop: position - adminbar - $("[data-elementor-type='header']").height() - 10 });
-			}, 500);
-		}
-	});
-	/*Mobile Header*/
-	$('.menu-open-btn').on('click', function () {
-		$('.mobile-header-wrapper').slideToggle();
-		$('body').toggleClass('overflowbody mobile-menus-open');
-		// $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
-	});
+		$(".elementor-accordion-item").on("click", function (x) {
+			if (window.matchMedia("(max-width: 900px)").matches) {
+				const item = $(this);
+				setTimeout(function () {
+					const position = item.offset().top;
+					$("body, html").animate({ scrollTop: position - adminbar - $("[data-elementor-type='header']").height() - 10 });
+				}, 500);
+			}
+		});
+		/*Mobile Header*/
+		$('.menu-open-btn').on('click', function () {
+			$('.mobile-header-wrapper').slideToggle();
+			$('body').toggleClass('overflowbody mobile-menus-open');
+			// $('.header-wrapper .header-menu-wrapper .header-menu-colum').addClass('activemenu');
+		});
 		var $opensubmenu = $("<div class='open-submenu-arrow'></div>");
 		$('.mobile-menus ul.menu > li.menu-item-has-children').prepend($opensubmenu);
 
@@ -104,9 +104,23 @@
 			
 		  };
 		  
+		  $('.elementor-menu-toggle').on('click', function(){
+			$('body').toggleClass('Over-flow-hidden')
+		});
+
+
+		$("html body .footer-form .gform_wrapper form ul.gform_fields li.gfield input").on("input", function() {
+			if ($(this).val() !== "") {
+				$(this).addClass("hasValue");
+			} else {
+				$(this).removeClass("hasValue");
+			}
+		});
+
 	});
+
 	$(window).on("scroll load", function () {
-		if ($(window).scrollTop() > 50) {
+		if ($(window).scrollTop() > 180) {
 			$("body").addClass("active-header");
 		} else {
 			$("body").removeClass("active-header");
